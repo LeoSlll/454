@@ -2,9 +2,7 @@
 
 
 body.background = './img/giphy.gif';
-body.style.border = '2px'
-body.style.borderColor = 'white'
-body.style.borderStyle = 'solid'
+
  
 
 album2.onmouseover = function(){
