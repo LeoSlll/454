@@ -2,7 +2,7 @@
 album.onmouseover = function(){
    let target = this.id;
    if (target == 'album')
-   body.background = '../img/7SIm.gif';
+   body.style.background = 'white';
 }
 
 
