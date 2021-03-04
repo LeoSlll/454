@@ -2,7 +2,7 @@
 album.onmouseover = function(){
    let target = this.id;
    if (target == 'album')
-   body.style.background = 'white';
+   body.background = '../3d8eb33999e0ef2e2e8cfb977df735e2 - копия.gif';
 }
 
 
