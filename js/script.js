@@ -1,6 +1,11 @@
 
-body.background = '../img/giphy.gif';
-document.getElementById("body").width='1100px';
+
+
+body.background = './img/giphy.gif';
+body.style.border = '2px'
+body.style.borderColor = 'white'
+body.style.borderStyle = 'solid'
+ 
 
 album2.onmouseover = function(){
    let target = this.id
@@ -15,7 +20,7 @@ album2.onmouseover = function(){
    
   album2.onmouseout = function(){
   let target = body;
-  target.background = '../img/giphy.gif';
+  target.background = './img/giphy.gif';
    }
 
 
