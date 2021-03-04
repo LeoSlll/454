@@ -2,14 +2,15 @@
 album.onmouseover = function(){
    let target = this.id;
    if (target == 'album')
-   body.background = '../img/fon.gif';
+   body.background = '../img/fon.GIF';
+                     
 }
 
 
 album2.onmouseover = function(){
    let target = this.id
    if (target == 'album2')
-   body.background = '../img/foon.gif';
+   body.background = '../img/foon.GIF';
 ;
 
 }
