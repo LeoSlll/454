@@ -9,7 +9,13 @@
 }
 body{
 	background-color: black;
-	
+	background-size: 720px 1280px;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition-duration: 1s;
+
+	 
+    	
 }
 
 @media (max-width: 1200px){
@@ -45,106 +51,103 @@ body{
 }
 
 
-.block__container {
-  
+.block__container{
   max-width: 1200px;
-  margin: 140px auto;
-  
-
-  
-
+  margin: 0px auto;
+  padding: 0px 0px 100px 0px;
 }
+
 .freezaka__logo img{
    max-width: 100%;
    padding: 0 20%;
-	
-	
-	
+   margin: 150px 0px 0px 0px;
 }
+
 .block{
-	justify-content: center;
+   justify-content: center;
 	display: flex;
 	font-family: 'Conv_Gouranga-Pixel';
 	color: white;
 	font-size: calc(20px + 20 * (100vw / 1800));
- }
-
-
-
+}
 
 .album{
-	margin: 10px 0;
-   justify-content: center;
-	
+	justify-content: center;
 	display: flex;
 	font-family: 'Conv_Gouranga-Pixel';
    font-size: calc(20px + 20 * (100vw / 1800));
 	color: white;
-	}
-
-   .album:hover{
-	color: #D3D3D3;
-	
 }
 
+.album:hover{
+	color: #8a0000;
+	transition-duration: 1s;
+}
 
 .album2{
 	justify-content: center;
-	
 	display: flex;
 	font-family: 'Conv_Gouranga-Pixel';
 	font-size: calc(20px + 20 * (100vw / 1800));
 	color: white;
-	
-	
-
-	} 
+} 
  
-.album2:hover{
-	color: #D3D3D3;
+ .album2:hover{
+	color: #8a0000;
+	transition-duration: 1s;
+}
+
+.sptfy_img{
+	display: flex;
+	margin: 50px 0 0 300px;
+	
 }
 .links{
-	
-   margin: 30px 0px 0px 70px;
-	max-width: 100%;
-	padding: 0px 0px 0px 0px;
-}
-
-.sondcld{
-	
-	padding: 0px 0px 0px 0px;
-	max-width: 20%;
-
-}
-.spotify{
-	
-	padding: 0px 0px 0px 0px;
-	max-width: 20%;
+	margin: 80px 0 0 0;
+	display: flex;
+	justify-content: center;
 	
 }
-.bncmp{
-	
-	padding: 0px 0px 0px 0px;
-	max-width: 20%;
-   
-}   
-
-.backimg{
+.scld_img{
 	width: 100%;
-	margin: 0px 0px 0px 0px;
+	display: flex;
+	padding: 11px 0 0 0;
+	
+	
+}
+.spotify_img {
+	width: 100%;
+	display: flex;
+	padding: 15px 0 0 20px;
+}
+.bandcamp_img{
+	width: 100%;
+	display: flex;
+	padding: 0 0 0 20px;
+}
+.instagram_img{
+	width: 100%;
+	display: flex;
+	padding: 15px 0 0 20px;
 
 }
-.strange{
-	margin: 0px 0px 0px -15px;
+.quetion_img{
+	width: 100%;
+	display: flex;
+	padding: 15px 0 0 10px;
+
 }
+.backimg{
+
+}
+
 .freezaka{
 	position: absolute;
-	
 	width: 250px;
 }
 
 .cassete_img{
-	border: 2px soli white;
+  border: 1px solid white;
   max-width: 100%;
   
 }
