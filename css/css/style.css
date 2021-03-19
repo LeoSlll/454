@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: black;
-  background-size: 720px 1280px;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   transition-duration: 1s;
@@ -121,16 +121,21 @@ body {
 .block__container {
   max-width: 1200px;
   margin: 0px auto;
-  padding: 0px 0px 100px 0px;
+  padding: 0px 0px 80px 0px;
 }
 
 .freezaka__logo img {
   max-width: 100%;
-  padding: 0 20%;
   margin: 150px 0px 0px 0px;
 }
 
+.freezaka__logo {
+  display: flex;
+  justify-content: center;
+}
+
 .block {
+  padding: 0px 0px 0px 0px;
   justify-content: center;
   display: flex;
   font-family: 'Conv_Gouranga-Pixel';
@@ -139,6 +144,7 @@ body {
 }
 
 .album {
+  margin: 0px 0px 0px 0px;
   justify-content: center;
   display: flex;
   font-family: 'Conv_Gouranga-Pixel';
@@ -148,7 +154,7 @@ body {
 
 .album:hover {
   color: #8a0000;
-  transition-duration: 1s;
+  transition-duration: 0.7s;
 }
 
 .album2 {
@@ -161,12 +167,7 @@ body {
 
 .album2:hover {
   color: #8a0000;
-  transition-duration: 1s;
-}
-
-.sptfy_img {
-  display: flex;
-  margin: 50px 0 0 300px;
+  transition-duration: 0.7s;
 }
 
 .links {
@@ -176,6 +177,7 @@ body {
 }
 
 .scld_img {
+  background-size: contain;
   width: 100%;
   display: flex;
   padding: 11px 0 0 0;
@@ -184,38 +186,159 @@ body {
 .spotify_img {
   width: 100%;
   display: flex;
-  padding: 15px 0 0 20px;
+  padding: 15px 0 0 5px;
 }
 
 .bandcamp_img {
   width: 100%;
   display: flex;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 5px;
 }
 
 .instagram_img {
   width: 100%;
   display: flex;
-  padding: 15px 0 0 20px;
+  padding: 15px 0 0 5px;
 }
 
 .quetion_img {
   width: 100%;
   display: flex;
-  padding: 15px 0 0 10px;
+  padding: 15px 0 0 0;
 }
 
-.freezaka {
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup__area {
   position: absolute;
-  width: 250px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-.cassete_img {
-  border: 1px solid white;
-  max-width: 100%;
+.popup:target {
+  opacity: 1;
+  visibility: visible;
 }
 
-.music {
-  margin: 0px 0px 0px 0px;
-  max-width: 100%;
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup:target .popup__content {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.popup__content {
+  opacity: 0,5;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  transform: scale(2);
+  transition: all 0.5s ease 0s;
+}
+
+.photo__content {
+  width: 100%;
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.popup__title {
+  font-size: 40px;
+}
+
+.popup2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup__area2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup2:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__body2 {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup2:target .popup__content2 {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.popup__content2 {
+  opacity: 0,5;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  transform: scale(2);
+  transition: all 0.5s ease 0s;
+}
+
+.photo__content2 {
+  width: 100%;
+}
+
+.popup__close2 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.popup__title2 {
+  font-size: 40px;
 }
