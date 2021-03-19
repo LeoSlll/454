@@ -52,7 +52,6 @@ body{
 
 
 .block__container{
-	border: 1px solid white;
   max-width: 1200px;
   margin: 0px auto;
   padding: 0px 0px 0px 0px;
@@ -68,15 +67,14 @@ body{
   
 }
 .freezaka__logo{
-	border: 1px solid white;
-  margin: 100px 0px 0px 0px;
+  margin: 120px 0px 0px 0px;
   padding: 0px 0px 35% 0px;
   overflow: hidden;
   position: relative;
 }
 
 .block{
-	margin: 0px 0px 4px 0px;
+	margin: 30px 0px 4px 0px;
    justify-content: center;
 	display: flex;
 	font-family: 'Conv_Gouranga-Pixel';
@@ -85,7 +83,7 @@ body{
 }
 
 .album{
-	margin: 0px 0px 4px 0px;
+	margin: 4px 0px 4px 0px;
 	justify-content: center;
 	display: flex;
 	font-family: 'Conv_Gouranga-Pixel';
@@ -112,7 +110,6 @@ body{
 }
 
 .links{
-	border: 1px solid white;
 	margin: 80px 0 0 0;
 	display: flex;
 	justify-content: center;
@@ -262,6 +259,7 @@ font-size: 40px;
 }
 .photo__content2{
 	width: 100%;
+	
 }
 .popup__close2{
    position: absolute;
