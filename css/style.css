@@ -125,8 +125,8 @@ body {
 }
 
 .freezaka__logo img {
-  max-width: 100%;
-  margin: 150px 0px 0px 0px;
+  width: 90%;
+  margin: 150px 0 0 0;
 }
 
 .freezaka__logo {
@@ -186,19 +186,19 @@ body {
 .spotify_img {
   width: 100%;
   display: flex;
-  padding: 15px 0 0 5px;
+  padding: 15px 0 0 0;
 }
 
 .bandcamp_img {
   width: 100%;
   display: flex;
-  padding: 0 0 0 5px;
+  padding: 0 0 0 0;
 }
 
 .instagram_img {
   width: 100%;
   display: flex;
-  padding: 15px 0 0 5px;
+  padding: 15px 0 0 0;
 }
 
 .quetion_img {
