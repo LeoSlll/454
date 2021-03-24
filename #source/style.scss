@@ -10,7 +10,7 @@
 body{
 	background-color: black;
 	background-size: cover;
-	background-position: center;
+	
 	background-repeat: no-repeat;
 	transition-duration: 1s;
 
@@ -119,30 +119,30 @@ body{
 	background-size: contain;
 	width: 100%;
 	display: flex;
-	padding: 11px 0 0 0;
+	padding: 13px 0 0 0;
 	
 	
 }
 .spotify_img {
 	width: 100%;
 	display: flex;
-	padding: 15px 0 0 0;
+	padding: 26px 0 0 5px;
 }
 .bandcamp_img{
 	width: 100%;
 	display: flex;
-	padding: 0 0 0 0;
+	padding: 0 0 0 5px;
 }
 .instagram_img{
 	width: 100%;
 	display: flex;
-	padding: 15px 0 0 0;
+	padding: 22px 0 0 5px;
 
 }
 .quetion_img{
 	width: 100%;
 	display: flex;
-	padding: 15px 0 0 0;
+	padding: 24px 0 0 0;
 
 }
 
