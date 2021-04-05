@@ -1,28 +1,21 @@
-
-
-
-body.background = './img/episode 1.gif';
-document.body.style.background
-
-
-
- 
+"use string"
 
 album2.onmouseover = function(){
-   let target = this.id
-   if (target == 'album2')
-   body.background = './img/episode 2.gif';
-;
-
+   let target = 'album2';
+   if (target == 'album2');
+   document.getElementById("iii").style.visibility="visible";
+   document.getElementById("iii").style.opacity="1";
+   
 }
 
 
-
-   
-  album2.onmouseout = function(){
+album2.onmouseout = function(){
   let target = body;
-  target.background = './img/episode 1.gif';
-   }
+  document.getElementById("iii").style.visibility="hidden";
+  document.getElementById("iii").style.opacity="0";
+
+  
+}
  
 
 
