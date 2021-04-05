@@ -80,13 +80,6 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
-body {
-  background-color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition-duration: 1s;
-}
-
 @media (max-width: 1200px) {
   .block__container {
     max-width: 970px;
@@ -107,7 +100,7 @@ body {
 
 @media (max-width: 767px) and (max-width: 767px) {
   .album {
-    font-size: calc(25px + (50 + 50 * 0.7) * ((100vw - 320) / 1800));
+    font-size: calc(10px + (50 + 50 * 0.7) * ((100vw - 320) / 1200));
   }
 }
 
@@ -120,100 +113,173 @@ body {
 .block__container {
   max-width: 1200px;
   margin: 0px auto;
-  padding: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
-.freezaka__logo img {
+.logo__img {
+  position: relative;
+  z-index: 2;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .freezaka__logo {
-  margin: 120px 0px 0px 0px;
-  padding: 0px 0px 35% 0px;
-  overflow: hidden;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
   position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
 }
 
 .block {
+  position: relative;
+  z-index: 2;
   margin: 30px 0px 4px 0px;
   justify-content: center;
   display: flex;
   font-family: 'Conv_Gouranga-Pixel';
   color: white;
-  font-size: calc(20px + 30 * (100vw / 1800));
+  font-size: calc(18px + 18 * (100vw / 1800));
 }
 
 .album {
+  max-width: 480px;
+  position: relative;
+  z-index: 2;
   margin: 4px 0px 4px 0px;
   justify-content: center;
   display: flex;
   font-family: 'Conv_Gouranga-Pixel';
-  font-size: calc(20px + 30 * (100vw / 1800));
+  font-size: calc(18px + 18 * (100vw / 1800));
   color: white;
 }
 
 .album:hover {
+  opacity: 1;
+  z-index: 2;
   color: #8a0000;
-  transition-duration: 0.7s;
+  transition-duration: 0.4s;
 }
 
 .album2 {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
   justify-content: center;
   display: flex;
   font-family: 'Conv_Gouranga-Pixel';
-  font-size: calc(20px + 30 * (100vw / 1800));
+  font-size: calc(18px + 18 * (100vw / 1800));
   color: white;
 }
 
 .album2:hover {
   color: #8a0000;
-  transition-duration: 0.7s;
+  transition-duration: 0.4s;
 }
 
 .links {
-  margin: 80px 0 0 0;
+  width: 100%;
+  position: relative;
+  z-index: 2;
   display: flex;
+  padding: 30px 0px 0px 0px;
   justify-content: center;
 }
 
 .scld_img {
-  background-size: contain;
-  width: 100%;
   display: flex;
-  padding: 13px 0 0 0;
+  padding: 12px 0px 0px 0px;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+
+@media (max-width: 400px) {
+  .scld_img {
+    padding: 16px 0px 0px 0px;
+  }
 }
 
 .spotify_img {
-  width: 100%;
+  padding: 26px 15px 0px 10px;
   display: flex;
-  padding: 26px 0 0 5px;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
 }
 
 .bandcamp_img {
-  width: 100%;
+  padding: 0px 0px 0px 0px;
   display: flex;
-  padding: 0 0 0 5px;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+
+@media (max-width: 400px) {
+  .bandcamp_img {
+    padding: 15px 0px 0px 0px;
+  }
 }
 
 .instagram_img {
-  width: 100%;
+  padding: 21px 0px 0px 14px;
   display: flex;
-  padding: 22px 0 0 5px;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+
+@media (max-width: 400px) {
+  .instagram_img {
+    padding: 22px 0px 0px 14px;
+  }
 }
 
 .quetion_img {
-  width: 100%;
+  padding: 23px 0px 0px 7px;
   display: flex;
-  padding: 24px 0 0 0;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+
+.ii {
+  position: absolute;
+  visibility: visible;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/episode 1.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.iii {
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/episode 2.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 .popup {
   position: fixed;
+  z-index: 2;
   width: 100%;
   height: 100%;
   color: white;
@@ -224,11 +290,12 @@ body {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 0.8s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .popup__area {
   position: absolute;
+  z-index: 3;
   width: 100%;
   height: 100%;
   top: 0;
@@ -236,11 +303,13 @@ body {
 }
 
 .popup:target {
+  z-index: 2;
   opacity: 1;
   visibility: visible;
 }
 
 .popup__body {
+  z-index: 2;
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -249,21 +318,24 @@ body {
 }
 
 .popup:target .popup__content {
-  transform: translate(0px, 0px);
+  z-index: 2;
+  transform: translate(0px, 65px);
   opacity: 1;
 }
 
 .popup__content {
+  z-index: 2;
   opacity: 0,5;
   color: #000;
   max-width: 800px;
   padding: 30px;
   position: relative;
-  transform: scale(2);
-  transition: all 0.5s ease 0s;
+  transform: translateY 20px;
+  transition: all 0.7s ease 0s;
 }
 
 .photo__content {
+  z-index: 3;
   width: 100%;
 }
 
@@ -281,6 +353,7 @@ body {
 }
 
 .popup2 {
+  z-index: 2;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -292,10 +365,11 @@ body {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 0.8s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .popup__area2 {
+  z-index: 2;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -309,6 +383,7 @@ body {
 }
 
 .popup__body2 {
+  z-index: 2;
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -317,17 +392,19 @@ body {
 }
 
 .popup2:target .popup__content2 {
-  transform: translate(0px, 0px);
+  z-index: 2;
+  transform: translate(0px, 65px);
   opacity: 1;
 }
 
 .popup__content2 {
+  z-index: 2;
   opacity: 0,5;
   color: #000;
   max-width: 800px;
   padding: 30px;
   position: relative;
-  transform: scale(2);
+  transform: translateY 20px;
   transition: all 0.5s ease 0s;
 }
 
@@ -345,5 +422,6 @@ body {
 }
 
 .popup__title2 {
+  z-index: 2;
   font-size: 40px;
 }
