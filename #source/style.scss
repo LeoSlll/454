@@ -247,6 +247,13 @@ body {
 	position: relative;
 	z-index: 3;
 }
+@media (max-width: 1000px) {
+	.ii {
+		z-index: 2;
+		padding: 20px 0px 0px 0px;
+		
+	}
+}
 @media (max-width:  768px) {
 	.ii {
 		visibility: hidden;
@@ -290,6 +297,7 @@ body {
 	transition-property: all;
 	transition-duration: 0.5s;
 }
+
 
 @media (max-width:  768px) {
 	.iii {
