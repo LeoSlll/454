@@ -377,6 +377,13 @@ body {
   z-index: 3;
 }
 
+@media (max-width: 1000px) {
+  .ii {
+    z-index: 2;
+    padding: 20px 0px 0px 0px;
+  }
+}
+
 @media (max-width: 768px) {
   .ii {
     visibility: hidden;
