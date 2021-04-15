@@ -40,7 +40,7 @@ function image_loaded() {
          if (!preloader.classList.contains('done')) {
             preloader.classList.add('done');
          }
-      }, 1000);
+      }, 3000);
 
    }
 
