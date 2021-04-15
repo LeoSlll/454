@@ -21,7 +21,7 @@ let
    images_total_count = images.length,
    images_loaded_count = 0;
 perc_display = document.getElementById('load_perc');
-preloader = document.getElementById('preloader');
+preloader = document.getElementById('page preloader');
 for (let i = 0; i < images_total_count; i++) {
    image_clone = new Image();
    image_clone.onload = image_loaded;
@@ -40,7 +40,7 @@ function image_loaded() {
          if (!preloader.classList.contains('done')) {
             preloader.classList.add('done');
          }
-      }, 2000);
+      }, 1000);
 
    }
 
