@@ -1,53 +1,50 @@
 "use string"
 
-album2.onmouseover = function(){
+album2.onmouseover = function () {
    let target = 'album2';
    if (target == 'album2');
-   document.getElementById("iii").style.visibility="visible";
-   document.getElementById("iii").style.opacity="1";
+   document.getElementById("iii").style.visibility = "visible";
+   document.getElementById("iii").style.opacity = "1";
 }
 
 
-album2.onmouseout = function(){
-  let target = body;
-  document.getElementById("iii").style.visibility="hidden";
-  document.getElementById("iii").style.opacity="0";
+album2.onmouseout = function () {
+   let target = body;
+   document.getElementById("iii").style.visibility = "hidden";
+   document.getElementById("iii").style.opacity = "0";
 
-  
+
 }
 
-let 
-images                 = document.images,
-images_total_count     = images.length,
-images_loaded_count    = 0;
-perc_display           = document.getElementById('load_perc');
-preloader              = document.getElementById('page preloader');
-for(let i = 0; i<images_total_count;i++){
-	image_clone         = new Image();
-   image_clone.onload  = image_loaded;
+let
+   images = document.images,
+   images_total_count = images.length,
+   images_loaded_count = 0;
+perc_display = document.getElementById('load_perc');
+preloader = document.getElementById('preloader');
+for (let i = 0; i < images_total_count; i++) {
+   image_clone = new Image();
+   image_clone.onload = image_loaded;
    image_clone.onerror = image_loaded;
-   image_clone.src     = images [i].src;
-	}
-
-
-function image_loaded(){
-images_loaded_count++;
-perc_display.innerHTML = ( ( (100 / images_total_count) * images_loaded_count ) << 0 ) + '%';
-if ( images_loaded_count >= images_total_count ){
-
-setTimeout(function() {
-
-if( !preloader.classList.contains('done') )
-{
-	preloader.classList.add('done');
-}
-}, 1000);
-
-}
-
+   image_clone.src = images[i].src;
 }
 
 
+function image_loaded() {
+   images_loaded_count++;
+   perc_display.innerHTML = (((100 / images_total_count) * images_loaded_count) << 0) + '%';
+   if (images_loaded_count >= images_total_count) {
+
+      setTimeout(function () {
+
+         if (!preloader.classList.contains('done')) {
+            preloader.classList.add('done');
+         }
+      }, 2000);
+
+   }
+
+}
 
 
 
@@ -61,8 +58,10 @@ if( !preloader.classList.contains('done') )
 
 
 
- 
 
 
-    
+
+
+
+
 
