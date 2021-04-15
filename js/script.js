@@ -5,7 +5,6 @@ album2.onmouseover = function(){
    if (target == 'album2');
    document.getElementById("iii").style.visibility="visible";
    document.getElementById("iii").style.opacity="1";
-   
 }
 
 
