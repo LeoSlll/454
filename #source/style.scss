@@ -47,21 +47,21 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: #644b6d;
-	z-index: 3;
+	z-index: 4;
 	opacity: 1;
 	visibility: visible;
 	transition-duration: 0.4s;
 }
 
 .videomediapreloader {
-	z-index: 1;
+	z-index: 4;
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 
 .loader {
-	z-index: 1;
+	z-index: 4;
 	font-family: "Conv_Gouranga-Pixel";
 	width: 100%;
 	height: 75px;
@@ -87,10 +87,9 @@ body {
 	position: relative;
 	z-index: 2;
 	width: 100%;
-	
 }
 .freezaka__logo {
-   max-width: 100%;
+	max-width: 100%;
 }
 .container {
 	display: flex;
@@ -265,19 +264,17 @@ body {
 	.ii {
 		z-index: 2;
 		padding: 0px 0px 0px 0px;
-		
 	}
 }
-@media (max-width:  768px) {
+@media (max-width: 768px) {
 	.ii {
 		visibility: hidden;
-		
 	}
 }
-.mini__img{
+.mini__img {
 	width: 100%;
 	height: 100%;
-	background: url('../img/giphy\ \(1\).gif');
+	background: url("../img/giphy\ \(1\).gif");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -285,16 +282,14 @@ body {
 	z-index: 2;
 	visibility: hidden;
 }
-@media (max-width:  768px) {
+@media (max-width: 768px) {
 	.mini__img {
 		visibility: visible;
-		
 	}
 }
 @media (max-width: 400px) {
 	mini__img {
 		visibility: visible;
-		
 	}
 }
 
@@ -312,17 +307,14 @@ body {
 	transition-duration: 0.5s;
 }
 
-
-@media (max-width:  768px) {
+@media (max-width: 768px) {
 	.iii {
 		visibility: hidden;
-		
 	}
 }
 @media (max-width: 400px) {
 	.iii {
 		visibility: hidden;
-		
 	}
 }
 .popup {
