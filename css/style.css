@@ -87,7 +87,7 @@ body {
 
 @media (max-width: 1200px) {
   .block__container {
-    max-width: 970px;
+    max-width: 997px;
   }
 }
 
@@ -188,7 +188,7 @@ body {
 .block {
   position: relative;
   z-index: 2;
-  margin: 30px 0px 4px 0px;
+  margin: 50px 0px 0px 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -198,6 +198,13 @@ body {
   font-family: "Conv_Gouranga-Pixel";
   color: white;
   font-size: calc(18px + 18 * (100vw / 1800));
+}
+
+@media (min-width: 1000px) {
+  .block {
+    z-index: 2;
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .album {
@@ -260,10 +267,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  .links {
+    z-index: 2;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .scld__img {
@@ -380,7 +394,7 @@ body {
 @media (max-width: 1000px) {
   .ii {
     z-index: 2;
-    padding: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 
